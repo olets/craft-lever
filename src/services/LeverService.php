@@ -34,8 +34,8 @@ class LeverService extends Component
     // =========================================================================
     public function __construct()
     {
-        $this->apiKey = Lever::getInstance()->settings->apiKey;
-        $this->site = Lever::getInstance()->settings->site;
+        $this->apiKey = getenv('LEVER_API_KEY');
+        $this->site = getenv('LEVER_SITE');
         $this->baseUrl = 'https://api.lever.co/v0/postings/' . $this->site;
     }
 

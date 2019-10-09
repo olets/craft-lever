@@ -26,9 +26,12 @@ Instead of sending applicants to apply on your Lever site, you can create a form
 
 ## Configuring Lever
 
-1. Copy `src/config.php`
-1. Save the file as `config/lever.php`
-1. Add your Lever values for `apiKey` and `site`
+Add two variables to your `.env` file. See below for how to determine the values to use.
+
+```shell
+LEVER_API_KEY="your api key"
+LEVER_SITE="your site"
+```
 
 ### Finding Your API Key
 
